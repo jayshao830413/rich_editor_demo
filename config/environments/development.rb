@@ -30,12 +30,9 @@ RichEditorDemo::Application.configure do
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
-      :bucket => 's3.demo.001',
-      :access_key_id => 'AKIAJITEO7DQ2DWOD3RA',
-      :secret_access_key => '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'
-      # :bucket => ENV['S3_BUCKET_NAME'],
-      # :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
-      # :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+      :bucket => ENV['S3_BUCKET_NAME'],
+      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     }
   }
 end
