@@ -41,6 +41,14 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Aws
+gem 'aws-sdk'
+
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-debugger'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
