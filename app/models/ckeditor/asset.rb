@@ -1,4 +1,5 @@
-class Ckeditor::Asset < ActiveRecord::Base
-  include Ckeditor::Orm::ActiveRecord::AssetBase
+class Ckeditor::Asset
+  include Ckeditor::Orm::Mongoid::AssetBase
+  include Mongoid::Paperclip
   include Ckeditor::Backend::Paperclip
 end

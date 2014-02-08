@@ -21,6 +21,8 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+gem 'mongoid', "~> 4.0.0.beta1"
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
@@ -28,7 +30,7 @@ gem 'jquery-rails'
 gem 'ckeditor'
 
 # Use File Uploading
-gem 'paperclip'
+gem 'mongoid-paperclip', :require => 'mongoid_paperclip'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
