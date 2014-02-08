@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <h1>Recently Posts</h1>
+    <br />
+    <ul>
+      <% @posts.each do |post| %>
+        <li>
+          <%= link_to post.title, post, :class => 'post_title' %>
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+              Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><%= link_to "Edit", edit_post_path(post) %></li>
+              <li><%= link_to "Destroy", post, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+            </ul>
+          </div>
+        </li>
+        <br />
+      <% end %>
+    </ul>
+
+    <%= link_to 'New Post', new_post_path, class: "btn btn-success" %>
+  </div>
+  <div class="col-md-3"></div>
+</div>
