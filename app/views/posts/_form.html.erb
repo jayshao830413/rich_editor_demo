@@ -16,7 +16,18 @@
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.cktext_area :content, :id => 'sometext' %>
+    <%= f.cktext_area :content, :id => 'sometext',  :ckeditor => { :toolbarGroups => [
+    { name: 'clipboard',   groups: [ 'clipboard', 'undo' ] },
+    { name: 'editing',     groups: [ 'find', 'selection', 'spellchecker' ] },
+    '/',
+    { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
+    { name: 'paragraph',   groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ] },
+    { name: 'links' },
+    '/',
+    { name: 'styles' },
+    { name: 'colors' },
+    { name: 'tools' },
+]} %>
   </div>
   <div class="field">
     <%= f.label :avatar %>
