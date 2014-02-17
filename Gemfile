@@ -28,6 +28,7 @@ gem 'jquery-rails'
 
 # Use rails ckeditor
 gem 'ckeditor'
+gem 'sqlite3'
 
 # Use File Uploading
 gem 'mongoid-paperclip', :require => 'mongoid_paperclip'

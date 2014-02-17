@@ -1,4 +1,4 @@
-RichEditorDemo::Application.routes.draw do
+RichMongoEditorDemo::Application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
   resources :posts
   root 'posts#index'
